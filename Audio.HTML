@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<audio id="myAudio">
+  
+  <source src="swades.mp3" type="audio/mpeg">
+ 
+</audio>
+
+<p>Click the buttons to play , pause & stop the audio.</p>
+
+<button onclick="playAudio()" type="button">Play Audio</button>
+<button onclick="pauseAudio()" type="button">Pause Audio</button> 
+<button onclick="stopAudio()" type="button">Stop Audio</button> 
+
+<script>
+var x = document.getElementById("myAudio"); <!--To get myaudio id-->
+
+function playAudio() { 
+    x.play(); 
+} 
+
+function pauseAudio() { 
+    x.pause(); 
+} 
+
+function stopAudio(){
+    x.pause();
+    x.currentTime = 0;
+}
+</script>
+
+</body>
+</html>
