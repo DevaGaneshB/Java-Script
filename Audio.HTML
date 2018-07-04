@@ -2,7 +2,7 @@
 <html>
 <body>
 
-<audio id="myAudio">
+<audio id="AudioPlayer">
   
   <source src="swades.mp3" type="audio/mpeg">
  
@@ -15,19 +15,19 @@
 <button onclick="stopAudio()" type="button">Stop Audio</button> 
 
 <script>
-var x = document.getElementById("myAudio"); <!--To get myaudio id-->
+var m = document.getElementById("AudioPlayer"); <!--To get myaudio id-->
 
 function playAudio() { 
-    x.play(); 
+    m.play(); 
 } 
 
 function pauseAudio() { 
-    x.pause(); 
+    m.pause(); 
 } 
 
 function stopAudio(){
-    x.pause();
-    x.currentTime = 0;
+    m.pause();
+    m.currentTime = 0;
 }
 </script>
 
