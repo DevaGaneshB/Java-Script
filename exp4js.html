@@ -1,0 +1,20 @@
+<!--JavaScript code to demonstrate conditional operator-->
+<html>
+<head>
+<title>Operator</title>
+</head>
+<body>
+<p>Enter your mark and click button:</p>
+<input id="mark" />
+<button onclick="result()">Get Result</button>
+<p id="demo"></p>
+<script>
+function result(){
+var mark,result;
+mark=document.getElementById("mark").value;<!--To get the values given -->
+result=(mark<50)?"Fail":"Pass";
+document.getElementById("demo").innerHTML="Result="+result;
+}
+</script>
+</body>
+</html>
