@@ -15,9 +15,9 @@ Enter text here...</textarea>
 function valid(){
 var x=document.forms["myForm"]["name"].value;
 var y = document.forms["myForm"]["email"].value;
-    var atpos = x.indexOf("@");
-    var dotpos = x.lastIndexOf(".");
-    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length || x =="") {
+    var atpos = y.indexOf("@");
+    var dotpos = y.lastIndexOf(".");
+    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=y.length || x =="") {
         alert("Invalid Input");}
     else{
 alert("Registred Successfully");}
