@@ -1,0 +1,20 @@
+<!--HTML javascript code to demonstrate form validation-->
+<html>
+<head>
+<title>Form validation</title>
+</head>
+<body>
+<form name="myForm" >
+Name:<input type="text" name="name">
+<button onclick="valid()" >Submit</button>
+</form>
+<script>
+function valid(){
+var x=document.forms["myForm"]["name"].value;
+if(x == ""){
+alert("Name is not filled");}
+else{
+alert("Input taken");}}
+</script>
+</body>
+</html>
